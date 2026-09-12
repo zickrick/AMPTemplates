@@ -23,6 +23,7 @@ App.WindowsCommandLineArgs=--port {{$ServerPort}} --dataPath "./Data"
 App.CommandLineArgs=
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
+App.EnvironmentVariables={"DOTNET_ROOT":"/usr/lib/dotnet"}
 App.EnvironmentVariables={}
 App.CommandLineParameterFormat=--{0} {1}
 App.CommandLineParameterDelimiter=
