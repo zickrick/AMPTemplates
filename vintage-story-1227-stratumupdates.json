@@ -4,7 +4,7 @@
         "UpdateStageDescription": "Running Stratum...",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "./vintage-story-1227-stratum/serverfiles/StratumServer.exe",
+        "UpdateSourceData": "./serverfiles/StratumServer.exe",
         "SkipOnFailure": true
     }
 ]
