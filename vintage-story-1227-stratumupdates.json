@@ -1,16 +1,5 @@
 [
     {
-        "UpdateStageName": "Downloading Stratum...",
-        "UpdateStageDescription": "Downloading Stratum...",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": " stratum-1.22.7-stratum.2-win-x64.zip ",
-        "UpdateSourceArgs": "StratumServer/Stratum",
-        "UnzipUpdateSource": true,
-        "DeleteAfterExtract": true,
-        "OneShot": true
-    },
-    {
         "UpdateStageName": "Running Stratum...",
         "UpdateStageDescription": "Running Stratum...",
         "UpdateSourcePlatform": "All",
