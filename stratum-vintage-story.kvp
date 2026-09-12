@@ -19,6 +19,7 @@ App.ExecutableWin=StratumServer.exe
 App.ExecutableLinux=./StratumServer
 App.WorkingDir=.
 App.LinuxCommandLineArgs=--port {{$ServerPort}} --dataPath "./Data"
+App.EnvironmentVariables={"DOTNET_ROOT":"/usr/lib/dotnet"}
 App.WindowsCommandLineArgs=--port {{$ServerPort}} --dataPath "./Data"
 App.CommandLineArgs=
 App.UseLinuxIOREDIR=False
