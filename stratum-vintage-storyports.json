@@ -1,0 +1,8 @@
+[
+  {
+    "Name": "Game",
+    "Port": 42420,
+    "Protocol": "Both",
+    "IPBinding": "0.0.0.0"
+  }
+]
