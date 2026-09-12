@@ -2,9 +2,9 @@
     {
         "UpdateStageName": "Running Stratum...",
         "UpdateStageDescription": "Running Stratum...",
-        "UpdateSourcePlatform": "All",
+        "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "./serverfiles/StratumServer.exe",
+        "UpdateSourceData": "./serverfiles/StratumServer",
         "SkipOnFailure": true
     }
 ]
