@@ -36,6 +36,14 @@
     "SkipOnFailure": false
   },
   {
+    "UpdateStageName": "Set Stratum Executable Permission",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"chmod +x '{{$FullBaseDir}}server/StratumServer' && echo 'StratumServer executable permission set'\"",
+    "SkipOnFailure": false
+  },
+  {
     "UpdateStageName": "Start Server",
     "UpdateSourcePlatform": "All",
     "UpdateSource": "StartApplication",
