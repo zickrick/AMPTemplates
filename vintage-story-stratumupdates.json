@@ -1,0 +1,56 @@
+[
+  {
+    "UpdateStageName": "Dotnet Directory Creation",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateDirectory",
+    "UpdateSourceArgs": "{{$FullBaseDir}}dotnet",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Server Directory Creation",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateDirectory",
+    "UpdateSourceArgs": "{{$FullBaseDir}}server",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": ".NET Runtime Download",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://dotnetcli.azureedge.net/dotnet/Runtime/{{DotnetVersion}}/dotnet-runtime-{{DotnetVersion}}-linux-x64.tar.gz",
+    "UpdateSourceTarget": "{{$FullBaseDir}}dotnet",
+    "UnzipUpdateSource": true,
+    "OverwriteExistingFiles": true,
+    "DeleteAfterExtract": true,
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Stratum Download",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://github.com/StratumServer/Stratum/releases/download/v{{StratumVersion}}/stratum-{{StratumVersion}}-linux-x64.zip",
+    "UpdateSourceTarget": "{{$FullBaseDir}}server",
+    "UnzipUpdateSource": true,
+    "OverwriteExistingFiles": true,
+    "DeleteAfterExtract": true,
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Start Server",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "StartApplication",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Wait For Server Start",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "WaitForStartupComplete",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Stop Server",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "ShutdownApplication",
+    "SkipOnFailure": false
+  }
+]
